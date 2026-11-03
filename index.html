@@ -1,3 +1,4 @@
+HTML
 <!DOCTYPE html>
 <html lang="tl" class="dark">
 <head>
@@ -21,395 +22,164 @@
         }
     </script>
 </head>
-<body class="bg-darkbg text-gray-100 font-sans antialiased min-h-screen flex flex-col justify-between relative bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(10, 10, 12, 0.9), rgba(10, 10, 12, 0.95)), url('background.jpeg.jpeg');"></body>
+<body class="bg-darkbg text-gray-100 font-sans antialiased min-h-screen flex flex-col justify-between relative bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(10, 10, 12, 0.9), rgba(10, 10, 12, 0.95)), url('background.jpeg.jpeg');">
 
     <!-- Navbar -->
-    <header class="w-full max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+    <header class="w-full max-w-7xl mx-auto px-6 py-4 flex justify-between items-center border-b border-gray-800">
         <div class="flex items-center gap-3">
-            <img src="logo.jpeg" alt="RoyFitPH Logo" class="w-20 h-20 rounded-xl object-cover">
-
-
-            <span class="font-semibold text-lg tracking-tight">RoyFitPH <span class="text-blue-500 text-xs px-2 py-0.5 bg-blue-500/10 rounded-full border border-blue-500/20">Hypertrophy Coach</span></span>
+            <img src="logo.jpeg" alt="RoyFitPH Logo" class="w-12 h-12 rounded-xl object-cover">
+            <span class="font-bold text-xl tracking-tight text-white">ROYFIT<span class="text-blue-500">PH</span></span>
         </div>
 
-        <nav class="hidden md:flex items-center gap-8 text-sm text-gray-400 font-medium">
-            <a href="#hero" class="text-white transition-colors">Home</a>
-            <a href="#services" class="hover:text-white transition-colors">Coaching Programs</a>
-             <a href="#clients progress" class="text-white transition-colors">Client Transformation</a>
-            <a href="#about" class="hover:text-white transition-colors">About Me</a>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300 font-medium">
+            <a href="#hero" class="hover:text-white transition">HOME</a>
+            <a href="#about" class="hover:text-white transition">ABOUT</a>
+            <a href="#success" class="hover:text-white transition">SUCCESS STORIES</a>
+            <a href="#programs" class="hover:text-white transition">PROGRAMS</a>
+            <a href="#contact" class="hover:text-white transition">CONTACT</a>
         </nav>
 
         <div>
-            <button onclick="openModal()" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-all shadow-lg shadow-blue-600/25 cursor-pointer">
+            <button onclick="openModal()" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl text-sm transition cursor-pointer">
                 Apply for Coaching
             </button>
         </div>
     </header>
 
     <main id="hero" class="w-full max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-    
-    <!-- Left Side: Text Content -->
-    <div class="md:col-span-7 space-y-6">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold">
-            <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-            SCIENCE-BASED MUSCLE BUILDING & LEAN BULKING
-        </div>
-        
-        <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Transform Your Physique <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">
-                with Custom Hypertrophy Coaching.
-            </span>
-        </h1>
-        
-        <p class="text-gray-400 text-sm md:text-base max-w-xl">
-            Hi, I'm <strong class="text-white">Roy Christian</strong> — Online fitness coach and personal trainer. No guesswork, no crash diets. Customized workout splits, flexible macro tracking, and sustainable fitness routines built for real results.
-        </p>
-
-        <div class="flex flex-wrap gap-4 pt-2">
-           <button onclick="openModal()" class="px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl inline-block text-center cursor-pointer">
-              Start Your Transformation
-            </button>
-
-           
-        </div>
-
-        <div class="grid grid-cols-3 gap-4 pt-6 border-t border-gray-800/80 max-w-md">
-            <div>
-                <h4 class="text-xl font-bold text-white">100%</h4>
-                <p class="text-xs text-gray-400">Customized Plans</p>
+        <!-- Left Side: Text Content -->
+        <div class="md:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold">
+                <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                SCIENCE-BASED MUSCLE BUILDING & LEAN BULKING
             </div>
-            <div>
-                <h4 class="text-xl font-bold text-white">24/7</h4>
-                <p class="text-xs text-gray-400">Coach Support</p>
+            
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                Transform Your Physique <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">
+                    with Custom Hypertrophy Coaching.
+                </span>
+            </h1>
+            
+            <p class="text-gray-400 text-sm md:text-base max-w-xl">
+                Hi, I'm <strong class="text-white">Roy Christian</strong> — Online fitness coach and personal trainer. No guesswork, no crash diets. Customized workout splits, flexible macro tracking, and sustainable fitness routines built for real results.
+            </p>
+
+            <div class="flex flex-wrap gap-4 pt-2">
+                 <button onclick="openModal()" class="px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl inline-block text-center cursor-pointer">
+                 Start Your Transformation
+                 </button>
             </div>
-            <div>
-                <h4 class="text-xl font-bold text-white">Results</h4>
-                <p class="text-xs text-gray-400">Driven Protocols</p>
-            </div>
-        </div>
-    </div>
 
-   
-
-    <!-- Right Side: Exact Top Alignment with "Transform Your Physique" -->
-    <div class="md:col-span-5 flex justify-center md:justify-end items-start pt-2">
-        <div class="relative w-full max-w-md h-[420px] rounded-3xl overflow-hidden shadow-2xl">
-            <img src="coachroy.jpg" alt="Coach Roy" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500 ease-out">
-        </div>
-    </div>
-
-</main>
-
-  <!-- Modern Contact Cards Setup -->
-  <div class="max-w-md mx-auto space-y-4">
-    
-    <!-- Viber / Phone Card -->
-    <a href="viber://add?number=+639622870153" class="flex items-center p-4 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition">
-      <div class="bg-black text-white p-3 rounded-xl mr-4">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-      </div>
-      <div>
-        <h3 class="font-bold text-lg text-gray-900">Viber</h3>
-        <p class="text-gray-600 text-sm">09622870153</p>
-      </div>
-    </a>
-
-    <!-- Email Card -->
-    <a href="mailto:roychristiancatuan778@gmail.com" class="flex items-center p-4 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition">
-      <div class="bg-black text-white p-3 rounded-xl mr-4">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-      </div>
-      <div>
-        <h3 class="font-bold text-lg text-gray-900">Email</h3>
-        <p class="text-gray-600 text-sm">roychristiancatuan778@gmail.com</p>
-      </div>
-    </a>
-
-    <!-- Facebook Card -->
-    <a href="https://www.facebook.com/yor.nautac/" target="_blank" class="flex items-center p-4 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition">
-      <div class="bg-black text-white p-3 rounded-xl mr-4">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-      </div>
-      <div>
-        <h3 class="font-bold text-lg text-gray-900">Facebook</h3>
-        <p class="text-gray-600 text-sm">Connect on Facebook</p>
-      </div>
-    </a>
-    <!-- Instagram Card -->
-<a href="https://www.instagram.com/royfitph" target="_blank" class="flex items-center p-4 bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition">
-  <div class="bg-black text-white p-3 rounded-xl mr-4">
-    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-  </div>
-  <div>
-    <h3 class="font-bold text-lg text-gray-900">Instagram</h3>
-    <p class="text-gray-600 text-sm">Follow on Instagram</p>
-  </div>
-</a>
-
-<section class="advantage-section" style="padding: 60px 20px; background-color: #ffffff; color: #111111; text-align: center;">
-  <div class="container" style="max-width: 800px; margin: 0 auto;">
-    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 10px; text-transform: uppercase;">THE ROYFITPH ADVANTAGE</h2>
-    <p style="font-size: 1.1rem; color: #555555; margin-bottom: 40px;">A proven system designed to help you achieve real, lasting transformation.</p>
-    
-    <div class="feature-item" style="text-align: left; margin-bottom: 30px; padding: 20px; border-left: 4px solid #ff4d4d; background: #f9f9f9;">
-      <h3 style="font-size: 1.3rem; margin-bottom: 8px; font-weight: 700;">Weight Loss & Fat Loss</h3>
-      <p style="font-size: 1rem; color: #666666; line-height: 1.5;">Shed excess weight effectively through personalized training and nutrition strategies tailored to your lifestyle.</p>
-    </div>
-
-    <div class="feature-item" style="text-align: left; margin-bottom: 30px; padding: 20px; border-left: 4px solid #ff4d4d; background: #f9f9f9;">
-      <h3 style="font-size: 1.3rem; margin-bottom: 8px; font-weight: 700;">Custom Muscle Hypertrophy</h3>
-      <p style="font-size: 1rem; color: #666666; line-height: 1.5;">Build lean mass and structural symmetry using science-based workout splits and progressive overload protocols.</p>
-    </div>
-  </div>
-</section>
-ADVANTAGE SECTION -->
-<section class="w-full max-w-7xl mx-auto px-6 py-16">
-  <div class="text-center mb-12">
-    <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight uppercase">THE ROYFITPH ADVANTAGE</h2>
-    <p class="text-gray-400 mt-2 text-base md:text-lg">A proven system designed to help you achieve real, lasting transformation.</p>
-  </div>
-
-  <!-- Grid Container -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    
-    <!-- Card 1: Weight Loss -->
-    <div class="p-6 bg-gray-900 border border-gray-800 rounded-2xl">
-      <div class="text-2xl mb-4 text-blue-500">⚖️</div>
-      <h3 class="text-lg font-bold text-white mb-2">Weight Loss</h3>
-      <p class="text-sm text-gray-400">Shed excess weight effectively through personalized training and nutrition strategies tailored to your lifestyle.</p>
-    </div>
-
-    <!-- Card 2: Fat Loss -->
-    <div class="p-6 bg-gray-900 border border-gray-800 rounded-2xl">
-      <div class="text-2xl mb-4 text-blue-500">🔥</div>
-      <h3 class="text-lg font-bold text-white mb-2">Fat Loss</h3>
-      <p class="text-sm text-gray-400">Target stubborn fat while maintaining muscle definition using data-driven methods for maximum results.</p>
-    </div>
-
-    <!-- Card 3: Body Recomposition -->
-    <div class="p-6 bg-gray-900 border border-gray-800 rounded-2xl">
-      <div class="text-2xl mb-4 text-blue-500">💪</div>
-      <h3 class="text-lg font-bold text-white mb-2">Body Recomposition</h3>
-      <p class="text-sm text-gray-400">Build muscle and burn fat simultaneously with programs built to reshape your body and boost confidence.</p>
-    </div>
-
-    <!-- Card 4: Nutrition Guidance -->
-    <div class="p-6 bg-gray-900 border border-gray-800 rounded-2xl">
-      <div class="text-2xl mb-4 text-blue-500">🥗</div>
-      <h3 class="text-lg font-bold text-white mb-2">Nutrition Guidance</h3>
-      <p class="text-sm text-gray-400">Receive expert advice and flexible meal strategies that fuel your performance and fit your daily routine.</p>
-    </div>
-
-    <!-- Card 5: Workout Plan -->
-    <div class="p-6 bg-gray-900 border border-gray-800 rounded-2xl">
-      <div class="text-2xl mb-4 text-blue-500">📋</div>
-      <h3 class="text-lg font-bold text-white mb-2">Workout Plan</h3>
-      <p class="text-sm text-gray-400">Customized training programs designed around your schedule, fitness level, and available equipment.</p>
-    </div>
-
-    <!-- Card 6: Meal Plan -->
-    <div class="p-6 bg-gray-900 border border-gray-800 rounded-2xl">
-      <div class="text-2xl mb-4 text-blue-500">🍽️</div>
-      <h3 class="text-lg font-bold text-white mb-2">Meal Plan</h3>
-      <p class="text-sm text-gray-400">Goal-based, easy-to-follow meal plans that make clean eating enjoyable and sustainable.</p>
-    </div>
-
-    <!-- Card 7: Weekly Check-Ins -->
-    <div class="p-6 bg-gray-900 border border-gray-800 rounded-2xl">
-      <div class="text-2xl mb-4 text-blue-500">📅</div>
-      <h3 class="text-lg font-bold text-white mb-2">Weekly Check-Ins</h3>
-      <p class="text-sm text-gray-400">Stay consistent and motivated with regular progress reviews and feedback for continuous improvement.</p>
-    </div>
-
-    <!-- Card 8: Chat Support -->
-    <div class="p-6 bg-gray-900 border border-gray-800 rounded-2xl">
-      <div class="text-2xl mb-4 text-blue-500">💬</div>
-      <h3 class="text-lg font-bold text-white mb-2">Chat Support</h3>
-      <p class="text-sm text-gray-400">Direct, personal communication with Coach Roy whenever you need guidance or motivation.</p>
-    </div>
-
-  </div>
-</section>
-<section class="w-full max-w-7xl mx-auto px-6 py-16">
-  
- <section id="transformations" class="py-16 px-4 max-w-4xl mx-auto">
-  <div class="text-center mb-10">
-    <span class="bg-blue-900/40 text-blue-400 text-xs font-semibold px-3 py-1 rounded-full border border-blue-700/50 uppercase tracking-widest">Real Results</span>
-    <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-3 mb-2 tracking-tight">Client Transformations</h2>
-    <p class="text-gray-400 text-sm md:text-base">Tingnan ang tunay na resulta ng aking mga na-coach sa custom hypertrophy at nutrition protocols.</p>
-  </div>
-
-  <!-- Carousel Outer Container -->
-  <div class="relative overflow-hidden rounded-3xl bg-gray-900/80 border border-gray-800 p-6 md:p-10 shadow-2xl">
-    
-    <!-- Slides Container -->
-    <div id="transformation-slider" class="relative w-full min-h-[460px] md:min-h-[500px]">
-      
-      <!-- Slide 1 (Sir Kher) -->
-      <div class="slide-item absolute inset-0 transition-all duration-700 opacity-100 ease-in-out flex flex-col md:flex-row items-center justify-center gap-8">
-        <!-- Overlapping Before & After Card Layout -->
-        <div class="relative w-full max-w-sm aspect-[4/5] flex items-center justify-center">
-          <!-- Main Image (After / Transformation) -->
-          <div class="w-[85%] h-[90%] rounded-2xl overflow-hidden shadow-2xl border border-gray-700 relative ml-auto">
-            <img src="https://via.placeholder.com/400x500/1e293b/ffffff?text=AFTER+1" alt="After Photo" class="w-full h-full object-cover">
-            <span class="absolute bottom-3 right-3 bg-red-600 text-white font-black text-xs px-3 py-1.5 rounded-lg shadow-lg tracking-wider">AFTER</span>
-          </div>
-          <!-- Overlapping Secondary Image (Before / Initial) -->
-          <div class="absolute left-0 bottom-2 w-[48%] h-[60%] rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-900 z-10">
-            <!-- Pwede mong palitan ang src nito ng 'sir kher before.jpg' kung may Before photo siya -->
-            <img src="https://via.placeholder.com/400x500/1e293b/ffffff?text=AFTER+1" alt="Before Photo" class="w-full h-full object-cover grayscale brightness-90">
-            <span class="absolute bottom-2 left-2 bg-black/80 backdrop-blur-md text-white font-bold text-[10px] px-2.5 py-1 rounded-md border border-gray-700">BEFORE</span>
-          </div>
-        </div>
-        <!-- Quote / Details -->
-        <div class="text-center md:text-left max-w-md space-y-3">
-          <span class="bg-blue-900/50 text-blue-400 text-xs font-semibold px-3 py-1 rounded-full border border-blue-800 inline-block">12 Weeks Protocol</span>
-          <h3 class="text-2xl font-bold text-white">Lean Bulking & Recomp</h3>
-          <p class="text-gray-300 italic text-sm md:text-base leading-relaxed">"Nakapagbawas ng body fat habang nakapagdagdag ng malinis na muscle mass nang walang crash diet!"</p>
-          <div class="text-blue-400 text-xs font-bold pt-2">— Sir Kher (Verified Client)</div>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="slide-item absolute inset-0 transition-all duration-700 opacity-0 pointer-events-none ease-in-out flex flex-col md:flex-row items-center justify-center gap-8">
-        <div class="relative w-full max-w-sm aspect-[4/5] flex items-center justify-center">
-          <div class="w-[85%] h-[90%] rounded-2xl overflow-hidden shadow-2xl border border-gray-700 relative ml-auto bg-gray-800">
-            <img src="https://via.placeholder.com/400x500/1e293b/ffffff?text=AFTER+2" alt="After Photo 2" class="w-full h-full object-cover">
-            <span class="absolute bottom-3 right-3 bg-red-600 text-white font-black text-xs px-3 py-1.5 rounded-lg shadow-lg tracking-wider">AFTER</span>
-          </div>
-          <div class="absolute left-0 bottom-2 w-[48%] h-[60%] rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-900 z-10 bg-gray-900">
-            <img src="https://via.placeholder.com/300x400/0f172a/ffffff?text=BEFORE+2" alt="Before Photo 2" class="w-full h-full object-cover">
-            <span class="absolute bottom-2 left-2 bg-black/80 backdrop-blur-md text-white font-bold text-[10px] px-2.5 py-1 rounded-md border border-gray-700">BEFORE</span>
-          </div>
-        </div>
-        <div class="text-center md:text-left max-w-md space-y-3">
-          <span class="bg-blue-900/50 text-blue-400 text-xs font-semibold px-3 py-1 rounded-full border border-blue-800 inline-block">16 Weeks Protocol</span>
-          <h3 class="text-2xl font-bold text-white">Strength & Muscle Gain</h3>
-          <p class="text-gray-300 italic text-sm md:text-base leading-relaxed">"Tumaas ang lakas sa compound lifts at mas nagkaroon ng kumpiyansa sa katawan."</p>
-          <div class="text-blue-400 text-xs font-bold pt-2">— Verified Client</div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Navigation Dots -->
-    <div class="flex justify-center gap-2 mt-6 relative z-20">
-      <button onclick="setSlide(0)" class="dot-btn w-3 h-3 rounded-full bg-blue-500 transition-all duration-300"></button>
-      <button onclick="setSlide(1)" class="dot-btn w-3 h-3 rounded-full bg-gray-600 transition-all duration-300"></button>
-    </div>
-
-  </div>
-</section>
-
-<!-- Automatic Slide Script -->
-<script>
-  let currentSlide = 0;
-  const slides = document.querySelectorAll('.slide-item');
-  const dots = document.querySelectorAll('.dot-btn');
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      if (i === index) {
-        slide.classList.remove('opacity-0', 'pointer-events-none');
-        slide.classList.add('opacity-100');
-      } else {
-        slide.classList.remove('opacity-100');
-        slide.classList.add('opacity-0', 'pointer-events-none');
-      }
-    });
-
-    dots.forEach((dot, i) => {
-      if (i === index) {
-        dot.classList.remove('bg-gray-600');
-        dot.classList.add('bg-blue-500', 'w-6');
-      } else {
-        dot.classList.remove('bg-blue-500', 'w-6');
-        dot.classList.add('bg-gray-600');
-      }
-    });
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }
-
-  function setSlide(index) {
-    currentSlide = index;
-    showSlide(currentSlide);
-  }
-
-  // Lilipat nang kusa bawat 4 seconds (4000ms)
-  setInterval(nextSlide, 4000);
-</script>
-    <!-- Coaching Programs / Services -->
-    <section id="services" class="w-full max-w-7xl mx-auto px-6 py-16 border-t border-gray-800/60">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <h2 class="text-3xl font-bold tracking-tight">Coaching Programs</h2>
-            <p class="text-gray-400 text-sm mt-2">Piliin ang programang akma sa iyong layunin sa pagpapaganda ng katawan.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <!-- Plan 1 -->
-            <div class="bg-carddark border border-gray-800 hover:border-blue-500/50 p-8 rounded-3xl transition-all flex flex-col justify-between">
+            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-gray-800/80 max-w-md">
                 <div>
-                    <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider bg-blue-500/10 px-3 py-1 rounded-full">Most Popular</span>
-                    <h3 class="text-2xl font-bold mt-4">1-on-1 Online Coaching</h3>
-                    <p class="text-gray-400 text-sm mt-2">Kumpletong gabay sa bawat linggo para sa pinakamabilis at pinakaligtas na resulta.</p>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-300">
-                        <li class="flex items-center gap-2">✓ Customized Workout Program</li>
-                        <li class="flex items-center gap-2">✓ Tailored Nutrition & Macro Plan</li>
-                        <li class="flex items-center gap-2">✓ Weekly Check-ins & Video Feedback</li>
-                        <li class="flex items-center gap-2">✓ 24/7 Chat Support via Messenger/Telegram</li>
-                    </ul>
+                    <h4 class="text-xl font-bold text-white">100%</h4>
+                    <p class="text-xs text-gray-400">Customized Plans</p>
                 </div>
-               <a href="https://docs.google.com/forms/d/e/1FAIpQLSeW-PLVl5-xG3kTr48WBYNNcm8rv-N7SkdzcKfAJY6KzV-EPw/viewform" target="_blank" class="block text-center mt-8 w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-xl transition-all">
-                  Mag-apply Na
-               </a>
-            </div>
-
-            <!-- Plan 2 -->
-            <div class="bg-carddark border border-gray-800 hover:border-purple-500/50 p-8 rounded-3xl transition-all flex flex-col justify-between">
                 <div>
-                    <span class="text-xs font-semibold text-purple-400 uppercase tracking-wider bg-purple-500/10 px-3 py-1 rounded-full">Self-Paced</span>
-                    <h3 class="text-2xl font-bold mt-4">Custom Workout Split</h3>
-                    <p class="text-gray-400 text-sm mt-2">Isang besesang gawa ng programang nakatutok sa iyong gustong i-grow na muscle groups.</p>
-                    <ul class="mt-6 space-y-3 text-sm text-gray-300">
-                        <li class="flex items-center gap-2">✓ 8-Week Hypertrophy Split</li>
-                        <li class="flex items-center gap-2">✓ Exercise Video Demonstrations</li>
-                        <li class="flex items-center gap-2">✓ Progressive Overload Tracker Guide</li>
-                        <li class="flex items-center gap-2">✓ Lifetime Access to Plan</li>
-                    </ul>
+                    <h4 class="text-xl font-bold text-white">24/7</h4>
+                    <p class="text-xs text-gray-400">Coach Support</p>
                 </div>
-                <button onclick="openModal()" class="mt-8 w-full bg-gray-800 hover:bg-gray-700 text-white font-medium py-3 rounded-xl transition-all cursor-pointer">
-                    Kunin ang Split
-                </button>
+                <div>
+                    <h4 class="text-xl font-bold text-white">Results</h4>
+                    <p class="text-xs text-gray-400">Driven Protocols</p>
+                </div>
             </div>
         </div>
+
+        <!-- Right Side: Image -->
+        <div class="md:col-span-5 flex justify-center md:justify-end items-start pt-2">
+            <div class="relative w-full max-w-md h-[420px] rounded-3xl overflow-hidden shadow-2xl">
+                <img src="coachroy.jpg" alt="Coach Roy" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500 ease-out">
+            </div>
+        </div>
+    </main>
+
+    <!-- THE ROYFITPH ADVANTAGE SECTION (Exact Border Grid Layout) -->
+    <section class="w-full max-w-7xl mx-auto px-6 py-16">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight uppercase">THE ROYFITPH ADVANTAGE</h2>
+        <p class="text-gray-400 mt-2 text-base md:text-lg">A proven system designed to help you achieve real, lasting transformation.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-gray-800">
+        
+        <!-- Card 1 -->
+        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
+          <div class="text-2xl mb-4 text-blue-500">⚖️</div>
+          <h3 class="text-lg font-bold text-white mb-2">Weight Loss</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Shed excess weight effectively through personalized training and nutrition strategies tailored to your lifestyle.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
+          <div class="text-2xl mb-4 text-blue-500">🔥</div>
+          <h3 class="text-lg font-bold text-white mb-2">Fat Loss</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Target stubborn fat while maintaining muscle definition using data-driven methods for maximum results.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
+          <div class="text-2xl mb-4 text-blue-500">💪</div>
+          <h3 class="text-lg font-bold text-white mb-2">Body Recomposition</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Build muscle and burn fat simultaneously with programs built to reshape your body and boost confidence.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
+          <div class="text-2xl mb-4 text-blue-500">🥗</div>
+          <h3 class="text-lg font-bold text-white mb-2">Nutrition Guidance</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Receive expert advice and flexible meal strategies that fuel your performance and fit your daily routine.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
+          <div class="text-2xl mb-4 text-blue-500">📋</div>
+          <h3 class="text-lg font-bold text-white mb-2">Workout Plan</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Customized training programs designed around your schedule, fitness level, and available equipment.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
+          <div class="text-2xl mb-4 text-blue-500">🍽️</div>
+          <h3 class="text-lg font-bold text-white mb-2">Meal Plan</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Goal-based, easy-to-follow meal plans that make clean eating enjoyable and sustainable.</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
+          <div class="text-2xl mb-4 text-blue-500">📅</div>
+          <h3 class="text-lg font-bold text-white mb-2">Weekly Check-Ins</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Stay consistent and motivated with regular progress reviews and feedback for continuous improvement.</p>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
+          <div class="text-2xl mb-4 text-blue-500">💬</div>
+          <h3 class="text-lg font-bold text-white mb-2">Chat Support</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Direct, personal communication with Coach Roy whenever you need guidance or motivation.</p>
+        </div>
+
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="w-full max-w-7xl mx-auto px-6 py-8 border-t border-gray-800/60 text-sm text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p>&copy; 2026 RoyFitPH. All rights reserved.</p>
         <div class="flex gap-6">
-            <a href="#" class="hover:text-gray-300 transition-colors">Facebook</a>
-            <a href="#" class="hover:text-gray-300 transition-colors">Instagram</a>
-            <a href="#" class="hover:text-gray-300 transition-colors">TikTok</a>
-             <a href="#" class="hover:text-gray-300 transition-colors">Viber</a>
-              <a href="#" class="hover:text-gray-300 transition-colors">TikTok</a>
-               <a href="#" class="hover:text-gray-300 transition-colors">Email</a>
-        </div>
-        </div>
+            <a href="https://www.facebook.com/yor.nautac/" target="_blank" class="hover:text-gray-300 transition-colors">Facebook</a>
+            <a href="https://www.instagram.com/royfitph" target="_blank" class="hover:text-gray-300 transition-colors">Instagram</a>
+            <a href="viber://add?number=+639622870153" class="hover:text-gray-300 transition-colors">Viber</a>
+            <a href="mailto:roychristiancatuan778@gmail.com" class="hover:text-gray-300 transition-colors">Email</a>
         </div>
     </footer>
 
     <!-- Modal / Popup for Application -->
-    <div id="coachingModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center px-4 z-50">
+    <div id="coachingModal" class="fixed inset-0 bg-black/85 backdrop-blur-sm hidden items-center justify-center px-4 z-50">
         <div class="bg-carddark border border-gray-800 p-8 rounded-3xl max-w-md w-full relative shadow-2xl">
-            <button onclick="closeModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white text-xl font-bold">&times;</button>
-            <h3 class="text-2xl font-bold mb-2">Client Application</h3>
-            <p class="text-xs text-gray-400 mb-6">Punan ang detalye sa ibaba at mag-message tayo para sa iyong coaching onboarding.</p>
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white text-xl font-bold cursor-pointer">&times;</button>
+            <h3 class="text-2xl font-bold mb-2 text-white">Client Application</h3>
+            <p class="text-xs text-gray-400 mb-6">Punan ang detalye sa ibaba para sa iyong coaching onboarding.</p>
             
             <form onsubmit="handleFormSubmit(event)" class="space-y-4">
                 <div>
@@ -428,9 +198,9 @@ ADVANTAGE SECTION -->
                         <option>Pagpapaganda ng Postura at Lakas</option>
                     </select>
                 </div>
-                <a href="https://docs.google.com/forms/d/1lNeFJIya9WDBG00jxXzXQepO2KL2CRoDil7FhwnlSQ4" target="_blank" class="block text-center w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-xl">
-                   Ipadala ang Application
-                </a>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-xl transition-all cursor-pointer">
+                    Ipadala ang Application
+                </button>
             </form>
         </div>
     </div>
@@ -449,36 +219,6 @@ ADVANTAGE SECTION -->
             event.preventDefault();
             window.open("https://forms.gle/nTZEmUvZzzvGrg7P6", "_blank");
             closeModal();
-        }
-        
-        function calculateMacros() {
-            const w = parseFloat(document.getElementById('weight').value);
-            const h = parseFloat(document.getElementById('height').value);
-            const age = parseFloat(document.getElementById('age').value);
-            const goal = document.getElementById('goal').value;
-
-            if(!w || !h || !age) {
-                alert('Paki-fill out ang lahat ng fields nang tama.');
-                return;
-            }
-
-            // Basic BMR estimation (Mifflin-St Jeor formula for men approx)
-            let bmr = (10 * w) + (6.25 * h) - (5 * age) + 5;
-            let tdee = bmr * 1.375; // Lightly active baseline
-
-            if(goal === 'bulk') tdee += 300;
-            if(goal === 'cut') tdee -= 400;
-
-            let protein = Math.round(w * 2.0); // 2g per kg
-            let fats = Math.round((tdee * 0.25) / 9);
-            let carbs = Math.round((tdee - (protein * 4) - (fats * 9)) / 4);
-
-            document.getElementById('calories-output').innerText = Math.round(tdee) + ' kcal';
-            document.getElementById('protein-output').innerText = protein + 'g';
-            document.getElementById('carbs-output').innerText = carbs + 'g';
-            document.getElementById('fats-output').innerText = fats + 'g';
-
-            document.getElementById('calc-result').classList.remove('hidden');
         }
     </script>
 </body>
