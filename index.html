@@ -1,225 +1,380 @@
-HTML
 <!DOCTYPE html>
-<html lang="tl" class="dark">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoyFitPH | Online Fitness Coaching & Hypertrophy Specialist</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        darkbg: '#1e293b',
-                        carddark: '#334155',
-                        cardhover: '#475569'
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RoyFitPH | Online Fitness Coach & Transformation Expert</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500;700&family=Inter:wght@300;400;600;800&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0c10;
+      color: #e0e0e0;
+    }
+    
+    .font-heading {
+      font-family: 'Teko', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    .accent-gradient {
+      background: linear-gradient(135deg, #e50914 0%, #ff3b00 100%);
+    }
+    
+    .accent-text {
+      color: #ff3b00;
+    }
+    
+    .border-glow:hover {
+      box-shadow: 0 0 15px rgba(255, 59, 0, 0.4);
+      border-color: #ff3b00;
+    }
+  </style>
 </head>
-<body class="bg-darkbg text-gray-100 font-sans antialiased min-h-screen flex flex-col justify-between relative bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(10, 10, 12, 0.9), rgba(10, 10, 12, 0.95)), url('background.jpeg.jpeg');">
+<body class="antialiased selection:bg-red-600 selection:text-white">
 
-    <!-- Navbar -->
-    <header class="w-full max-w-7xl mx-auto px-6 py-4 flex justify-between items-center border-b border-gray-800">
-        <div class="flex items-center gap-3">
-            <img src="logo.jpeg" alt="RoyFitPH Logo" class="w-12 h-12 rounded-xl object-cover">
-            <span class="font-bold text-xl tracking-tight text-white">ROYFIT<span class="text-blue-500">PH</span></span>
-        </div>
-
-        <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300 font-medium">
-            <a href="#hero" class="hover:text-white transition">HOME</a>
-            <a href="#about" class="hover:text-white transition">ABOUT</a>
-            <a href="#success" class="hover:text-white transition">SUCCESS STORIES</a>
-            <a href="#programs" class="hover:text-white transition">PROGRAMS</a>
-            <a href="#contact" class="hover:text-white transition">CONTACT</a>
-        </nav>
-
-        <div>
-            <button onclick="openModal()" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl text-sm transition cursor-pointer">
-                Apply for Coaching
-            </button>
-        </div>
-    </header>
-
-    <main id="hero" class="w-full max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-        <!-- Left Side: Text Content -->
-        <div class="md:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold">
-                <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
-                SCIENCE-BASED MUSCLE BUILDING & LEAN BULKING
-            </div>
-            
-            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                Transform Your Physique <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">
-                    with Custom Hypertrophy Coaching.
-                </span>
-            </h1>
-            
-            <p class="text-gray-400 text-sm md:text-base max-w-xl">
-                Hi, I'm <strong class="text-white">Roy Christian</strong> — Online fitness coach and personal trainer. No guesswork, no crash diets. Customized workout splits, flexible macro tracking, and sustainable fitness routines built for real results.
-            </p>
-
-            <div class="flex flex-wrap gap-4 pt-2">
-                 <button onclick="openModal()" class="px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl inline-block text-center cursor-pointer">
-                 Start Your Transformation
-                 </button>
-            </div>
-
-            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-gray-800/80 max-w-md">
-                <div>
-                    <h4 class="text-xl font-bold text-white">100%</h4>
-                    <p class="text-xs text-gray-400">Customized Plans</p>
-                </div>
-                <div>
-                    <h4 class="text-xl font-bold text-white">24/7</h4>
-                    <p class="text-xs text-gray-400">Coach Support</p>
-                </div>
-                <div>
-                    <h4 class="text-xl font-bold text-white">Results</h4>
-                    <p class="text-xs text-gray-400">Driven Protocols</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Side: Image -->
-        <div class="md:col-span-5 flex justify-center md:justify-end items-start pt-2">
-            <div class="relative w-full max-w-md h-[420px] rounded-3xl overflow-hidden shadow-2xl">
-                <img src="coachroy.jpg" alt="Coach Roy" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500 ease-out">
-            </div>
-        </div>
-    </main>
-
-    <!-- THE ROYFITPH ADVANTAGE SECTION (Exact Border Grid Layout) -->
-    <section class="w-full max-w-7xl mx-auto px-6 py-16">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight uppercase">THE ROYFITPH ADVANTAGE</h2>
-        <p class="text-gray-400 mt-2 text-base md:text-lg">A proven system designed to help you achieve real, lasting transformation.</p>
+  <!-- NAVIGATION -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <span class="font-heading text-4xl font-bold tracking-wider text-white">ROY<span class="accent-text">FITPH</span></span>
+      </a>
+      
+      <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-neutral-300">
+        <a href="#home" class="hover:text-white transition">HOME</a>
+        <a href="#about" class="hover:text-white transition">ABOUT</a>
+        <a href="#programs" class="hover:text-white transition">PROGRAMS</a>
+        <a href="#transformations" class="hover:text-white transition">SUCCESS STORIES</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-gray-800">
-        
-        <!-- Card 1 -->
-        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
-          <div class="text-2xl mb-4 text-blue-500">⚖️</div>
-          <h3 class="text-lg font-bold text-white mb-2">Weight Loss</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">Shed excess weight effectively through personalized training and nutrition strategies tailored to your lifestyle.</p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
-          <div class="text-2xl mb-4 text-blue-500">🔥</div>
-          <h3 class="text-lg font-bold text-white mb-2">Fat Loss</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">Target stubborn fat while maintaining muscle definition using data-driven methods for maximum results.</p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
-          <div class="text-2xl mb-4 text-blue-500">💪</div>
-          <h3 class="text-lg font-bold text-white mb-2">Body Recomposition</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">Build muscle and burn fat simultaneously with programs built to reshape your body and boost confidence.</p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
-          <div class="text-2xl mb-4 text-blue-500">🥗</div>
-          <h3 class="text-lg font-bold text-white mb-2">Nutrition Guidance</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">Receive expert advice and flexible meal strategies that fuel your performance and fit your daily routine.</p>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
-          <div class="text-2xl mb-4 text-blue-500">📋</div>
-          <h3 class="text-lg font-bold text-white mb-2">Workout Plan</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">Customized training programs designed around your schedule, fitness level, and available equipment.</p>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
-          <div class="text-2xl mb-4 text-blue-500">🍽️</div>
-          <h3 class="text-lg font-bold text-white mb-2">Meal Plan</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">Goal-based, easy-to-follow meal plans that make clean eating enjoyable and sustainable.</p>
-        </div>
-
-        <!-- Card 7 -->
-        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
-          <div class="text-2xl mb-4 text-blue-500">📅</div>
-          <h3 class="text-lg font-bold text-white mb-2">Weekly Check-Ins</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">Stay consistent and motivated with regular progress reviews and feedback for continuous improvement.</p>
-        </div>
-
-        <!-- Card 8 -->
-        <div class="p-8 border-r border-b border-gray-800 bg-gray-950">
-          <div class="text-2xl mb-4 text-blue-500">💬</div>
-          <h3 class="text-lg font-bold text-white mb-2">Chat Support</h3>
-          <p class="text-sm text-gray-400 leading-relaxed">Direct, personal communication with Coach Roy whenever you need guidance or motivation.</p>
-        </div>
-
+      <div class="hidden md:block">
+        <a href="#contact" class="accent-gradient text-white font-bold py-2.5 px-6 rounded-full text-sm uppercase tracking-wider hover:opacity-90 transition">
+          Start Transformation
+        </a>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="w-full max-w-7xl mx-auto px-6 py-8 border-t border-gray-800/60 text-sm text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p>&copy; 2026 RoyFitPH. All rights reserved.</p>
-        <div class="flex gap-6">
-            <a href="https://www.facebook.com/yor.nautac/" target="_blank" class="hover:text-gray-300 transition-colors">Facebook</a>
-            <a href="https://www.instagram.com/royfitph" target="_blank" class="hover:text-gray-300 transition-colors">Instagram</a>
-            <a href="viber://add?number=+639622870153" class="hover:text-gray-300 transition-colors">Viber</a>
-            <a href="mailto:roychristiancatuan778@gmail.com" class="hover:text-gray-300 transition-colors">Email</a>
-        </div>
-    </footer>
-
-    <!-- Modal / Popup for Application -->
-    <div id="coachingModal" class="fixed inset-0 bg-black/85 backdrop-blur-sm hidden items-center justify-center px-4 z-50">
-        <div class="bg-carddark border border-gray-800 p-8 rounded-3xl max-w-md w-full relative shadow-2xl">
-            <button onclick="closeModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white text-xl font-bold cursor-pointer">&times;</button>
-            <h3 class="text-2xl font-bold mb-2 text-white">Client Application</h3>
-            <p class="text-xs text-gray-400 mb-6">Punan ang detalye sa ibaba para sa iyong coaching onboarding.</p>
-            
-            <form onsubmit="handleFormSubmit(event)" class="space-y-4">
-                <div>
-                    <label class="block text-xs font-semibold text-gray-400 uppercase mb-1">Buong Pangalan</label>
-                    <input type="text" required class="w-full bg-darkbg border border-gray-800 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-blue-600">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-gray-400 uppercase mb-1">Email o Messenger Link</label>
-                    <input type="text" required class="w-full bg-darkbg border border-gray-800 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-blue-600">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-gray-400 uppercase mb-1">Pangunahing Layunin</label>
-                    <select class="w-full bg-darkbg border border-gray-800 rounded-xl px-4 py-2.5 text-white text-sm focus:outline-none focus:border-blue-600">
-                        <option>Magpalaki ng Muscle (Hypertrophy / Bulk)</option>
-                        <option>Magpapayat / Lean Cut</option>
-                        <option>Pagpapaganda ng Postura at Lakas</option>
-                    </select>
-                </div>
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-xl transition-all cursor-pointer">
-                    Ipadala ang Application
-                </button>
-            </form>
-        </div>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
 
-    <!-- JavaScript logic -->
-    <script>
-        function openModal() {
-            document.getElementById('coachingModal').classList.remove('hidden');
-            document.getElementById('coachingModal').classList.add('flex');
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-900 border-b border-neutral-800 px-6 py-4 flex flex-col space-y-4">
+      <a href="#home" class="mobile-link text-white font-medium">HOME</a>
+      <a href="#about" class="mobile-link text-white font-medium">ABOUT</a>
+      <a href="#programs" class="mobile-link text-white font-medium">PROGRAMS</a>
+      <a href="#transformations" class="mobile-link text-white font-medium">SUCCESS STORIES</a>
+      <a href="#faq" class="mobile-link text-white font-medium">FAQ</a>
+      <a href="#contact" class="accent-gradient text-center text-white font-bold py-3 rounded-md text-sm uppercase tracking-wider">
+        Start Transformation
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0b0c10] via-transparent to-black/80"></div>
+    
+    <div class="relative max-w-5xl mx-auto px-6 text-center z-10">
+      <span class="inline-block bg-neutral-800 text-red-500 font-semibold text-xs tracking-widest px-4 py-1.5 rounded-full mb-6 border border-neutral-700">
+        EXCLUSIVE 1-ON-1 ONLINE COACHING
+      </span>
+      <h1 class="font-heading text-6xl md:text-9xl font-bold tracking-tight leading-none text-white mb-6">
+        COACHING BY <span class="accent-text">ROYFITPH</span>
+      </h1>
+      <p class="text-lg md:text-2xl text-neutral-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+        Helping People Worldwide Build Quality Muscle and Transform Their Physique Through Customized Online Coaching.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="accent-gradient text-white font-bold px-8 py-4 rounded-full text-base uppercase tracking-wider hover:scale-105 transition duration-300 shadow-lg">
+          Start Your Transformation
+        </a>
+        <a href="#transformations" class="bg-neutral-900 text-white font-bold px-8 py-4 rounded-full text-base uppercase tracking-wider border border-neutral-700 hover:bg-neutral-800 transition">
+          View Results
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-24 bg-black border-t border-neutral-900">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="accent-text font-bold text-sm tracking-widest uppercase">Meet Your Coach</span>
+        <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mt-2 mb-6">TRANSFORM YOUR BODY WITH SCIENCE-BASED ONLINE COACHING</h2>
+        <p class="text-neutral-400 text-sm leading-relaxed mb-4">
+          Hi, I'm Roy, the head coach behind RoyFitPH. I specialize in customized online training programs, structured macro guidance, and sustainable fat loss or lean muscle building protocols.
+        </p>
+        <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+          Nasa Pilipinas man o international client ka, guided ka sa bawat hakbang gamit ang ating data-driven weekly check-ins at direct chat support para sigurado ang progress mo.
+        </p>
+        <div class="grid grid-cols-2 gap-4 text-white">
+          <div class="bg-neutral-900 p-4 rounded-xl border border-neutral-800">
+            <span class="font-heading text-3xl font-bold accent-text block">100%</span>
+            <span class="text-xs text-neutral-400">Customized Programs</span>
+          </div>
+          <div class="bg-neutral-900 p-4 rounded-xl border border-neutral-800">
+            <span class="font-heading text-3xl font-bold accent-text block">24/7</span>
+            <span class="text-xs text-neutral-400">Direct Chat Support</span>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="absolute -inset-1 accent-gradient rounded-2xl opacity-30 blur"></div>
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Coach RoyFitPH" class="relative rounded-2xl object-cover w-full h-[450px] border border-neutral-800" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS SECTION -->
+  <section id="programs" class="py-24 bg-neutral-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-heading text-5xl md:text-6xl font-bold text-white mb-4">ONLINE COACHING PROGRAMS</h2>
+        <p class="text-neutral-400 max-w-xl mx-auto">Structured online protocols designed to build muscle mass, shred fat, or achieve total body recomposition.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Lean Building -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 border-glow transition duration-300">
+          <div class="w-14 h-14 accent-gradient rounded-xl flex items-center justify-center text-white text-2xl mb-6">
+            <i class="fa-solid fa-dumbbell"></i>
+          </div>
+          <h3 class="font-heading text-3xl font-bold text-white mb-3">LEAN BUILDING</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+            Build quality muscle mass and upper-body symmetry while staying lean through structured progressive overload training and nutrition schedules.
+          </p>
+          <ul class="text-sm text-neutral-300 space-y-3">
+            <li><i class="fa-solid fa-check text-red-500 mr-2"></i> Custom Hypertrophy Split</li>
+            <li><i class="fa-solid fa-check text-red-500 mr-2"></i> Progressive Overload Tracking</li>
+            <li><i class="fa-solid fa-check text-red-500 mr-2"></i> Clean Surplus Nutrition Plan</li>
+          </ul>
+        </div>
+
+        <!-- Shredding -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 border-glow transition duration-300">
+          <div class="w-14 h-14 accent-gradient rounded-xl flex items-center justify-center text-white text-2xl mb-6">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+          <h3 class="font-heading text-3xl font-bold text-white mb-3">SHREDDING</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+            Cut body fat aggressively while preserving maximum muscle definition using strategic macro cycling and cardio optimization.
+          </p>
+          <ul class="text-sm text-neutral-300 space-y-3">
+            <li><i class="fa-solid fa-check text-red-500 mr-2"></i> Caloric Deficit Customization</li>
+            <li><i class="fa-solid fa-check text-red-500 mr-2"></i> Muscle-Retention Strategy</li>
+            <li><i class="fa-solid fa-check text-red-500 mr-2"></i> Step & Cardio Targets</li>
+          </ul>
+        </div>
+
+        <!-- Body Recomposition -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 border-glow transition duration-300">
+          <div class="w-14 h-14 accent-gradient rounded-xl flex items-center justify-center text-white text-2xl mb-6">
+            <i class="fa-solid fa-arrows-spin"></i>
+          </div>
+          <h3 class="font-heading text-3xl font-bold text-white mb-3">BODY RECOMP</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed mb-6">
+            Build muscle and burn stubborn body fat simultaneously with targeted nutritional timing and training programs built to reshape your physique.
+          </p>
+          <ul class="text-sm text-neutral-300 space-y-3">
+            <li><i class="fa-solid fa-check text-red-500 mr-2"></i> Recomp Calorie Strategy</li>
+            <li><i class="fa-solid fa-check text-red-500 mr-2"></i> Flexible Meal Guidance</li>
+            <li><i class="fa-solid fa-check text-red-500 mr-2"></i> Weekly Form & Progress Review</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGE SECTION -->
+  <section class="py-24 bg-black border-t border-neutral-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="accent-text font-bold text-sm tracking-widest uppercase">The RoyFitPH Advantage</span>
+        <h2 class="font-heading text-5xl md:text-6xl font-bold text-white mt-2">A PROVEN ONLINE SYSTEM</h2>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="p-6 bg-neutral-900/50 rounded-xl border border-neutral-800">
+          <h4 class="font-heading text-2xl text-white mb-2">CUSTOM WORKOUT PLAN</h4>
+          <p class="text-xs text-neutral-400">Tailored programs designed around your schedule, fitness level, and gym equipment.</p>
+        </div>
+        <div class="p-6 bg-neutral-900/50 rounded-xl border border-neutral-800">
+          <h4 class="font-heading text-2xl text-white mb-2">FLEXIBLE NUTRITION</h4>
+          <p class="text-xs text-neutral-400">Goal-based meal and macro strategies that fit your daily routine and food preferences.</p>
+        </div>
+        <div class="p-6 bg-neutral-900/50 rounded-xl border border-neutral-800">
+          <h4 class="font-heading text-2xl text-white mb-2">WEEKLY CHECK-INS</h4>
+          <p class="text-xs text-neutral-400">Regular progress reviews, photo analysis, and feedback for continuous physical improvement.</p>
+        </div>
+        <div class="p-6 bg-neutral-900/50 rounded-xl border border-neutral-800">
+          <h4 class="font-heading text-2xl text-white mb-2">DIRECT CHAT SUPPORT</h4>
+          <p class="text-xs text-neutral-400">Personal communication whenever you need guidance, motivation, or form checks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSFORMATIONS -->
+  <section id="transformations" class="py-24 bg-neutral-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-heading text-5xl md:text-6xl font-bold text-white">CLIENT TRANSFORMATIONS</h2>
+        <p class="text-neutral-400 max-w-xl mx-auto">Real online coaching results from clients who trusted the process.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Client 1 -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden">
+          <div class="grid grid-cols-2 gap-2 p-4">
+            <div class="relative">
+              <span class="absolute top-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">BEFORE</span>
+              <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=600&q=80" alt="Before" class="w-full h-72 object-cover rounded-lg" />
+            </div>
+            <div class="relative">
+              <span class="absolute top-2 left-2 accent-gradient text-white text-xs px-2 py-1 rounded font-bold">AFTER</span>
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="After" class="w-full h-72 object-cover rounded-lg" />
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-neutral-300 italic text-sm mb-4">"Coach Roy's online check-ins and structured macro guidance transformed not just my physique, but my daily habits."</p>
+            <h4 class="font-heading text-2xl font-bold text-white">CLIENT TRANSFORMATION</h4>
+            <span class="text-xs accent-text font-semibold">Lean Muscle Building Program</span>
+          </div>
+        </div>
+
+        <!-- Client 2 -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden">
+          <div class="grid grid-cols-2 gap-2 p-4">
+            <div class="relative">
+              <span class="absolute top-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">BEFORE</span>
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Before" class="w-full h-72 object-cover rounded-lg" />
+            </div>
+            <div class="relative">
+              <span class="absolute top-2 left-2 accent-gradient text-white text-xs px-2 py-1 rounded font-bold">AFTER</span>
+              <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" alt="After" class="w-full h-72 object-cover rounded-lg" />
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-neutral-300 italic text-sm mb-4">"The customized workout split and constant online accountability made fat loss much easier to sustain."</p>
+            <h4 class="font-heading text-2xl font-bold text-white">CLIENT TRANSFORMATION</h4>
+            <span class="text-xs accent-text font-semibold">Shredding & Fat Loss Protocol</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-24 bg-black">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-heading text-5xl md:text-6xl font-bold text-white">FREQUENTLY ASKED QUESTIONS</h2>
+        <p class="text-neutral-400">Everything you need to know about RoyFitPH Online Coaching.</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Item 1 -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left flex justify-between items-center text-white font-semibold hover:text-red-500 transition">
+            <span>Paano po gumagana ang online coaching?</span>
+            <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-neutral-400 text-sm">
+            Makukuha mo ang customized workout plan at meal/macro targets sa pamamagitan ng app/online portal. Mayroon din tayong regular weekly check-ins para ma-monitor ang progress mo at ma-adjust ang protocols kung kinakailangan.
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left flex justify-between items-center text-white font-semibold hover:text-red-500 transition">
+            <span>Kailangan ba na sa gym mag-workout o pwede sa bahay?</span>
+            <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-neutral-400 text-sm">
+            Flexible tayo! Pwede nating i-customize ang programa depende kung sa gym ka nag-aangkop o kung home workout setup (bodyweight / minimal equipment) ang meron ka.
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left flex justify-between items-center text-white font-semibold hover:text-red-500 transition">
+            <span>Paano ang bayaran at paano mag-start?</span>
+            <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-neutral-400 text-sm">
+            Maaari kang mag-inquire sa pamamagitan ng pag-click ng "Start Transformation" button sa ibaba para sa onboarding details at payment options (tulad ng GCash).
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT CTA -->
+  <footer id="contact" class="bg-neutral-950 border-t border-neutral-800 pt-20 pb-12">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="font-heading text-5xl md:text-7xl font-bold text-white mb-6">READY TO START YOUR TRANSFORMATION?</h2>
+      <p class="text-neutral-400 mb-8 max-w-lg mx-auto">Limited online coaching slots available to ensure personalized attention and quality feedback.</p>
+      
+      <a href="https://facebook.com" target="_blank" class="inline-block accent-gradient text-white font-bold px-10 py-4 rounded-full text-lg uppercase tracking-wider hover:scale-105 transition duration-300 mb-16 shadow-lg">
+        Get Started Now
+      </a>
+
+      <div class="flex justify-center space-x-6 text-neutral-400 text-xl mb-8">
+        <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="hover:text-white transition"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+
+      <p class="text-xs text-neutral-600">&copy; 2026 RoyFitPH. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT FOR INTERACTIVITY -->
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // FAQ Accordion Toggle
+    const faqBtns = document.querySelectorAll('.faq-btn');
+
+    faqBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('i');
+
+        // Toggle visibility
+        content.classList.toggle('hidden');
+        
+        // Rotate chevron icon
+        if (content.classList.contains('hidden')) {
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          icon.style.transform = 'rotate(180deg)';
         }
-        function closeModal() {
-            document.getElementById('coachingModal').classList.remove('flex');
-            document.getElementById('coachingModal').classList.add('hidden');
-        }
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            window.open("https://forms.gle/nTZEmUvZzzvGrg7P6", "_blank");
-            closeModal();
-        }
-    </script>
+      });
+    });
+  </script>
 </body>
 </html>
